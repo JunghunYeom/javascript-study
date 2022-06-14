@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let six = 6;
+		let seven = 7;
+		document.write(six + seven);
+		document.write('<br>');
+
+		let a = 40,
+			b = 30,
+			c = 20;
+			d = 5;
+			e = 10;
+		let sum = (a+b-c) * d / e;
+		document.write(sum);
+		document.write('<br>');
+
+		let str1 = '자바스크립트',
+			str2 = '기초';
+		let sum2 = str1 + str2;
+		document.write(sum2);
+		document.write('<br>');
+
+		let time1 = '현재 시간은 ',
+			time2 = 1,
+			time3 = 2;
+		let str3 = '시 입니다.',
+			str4 = time1 + time2 + time3 + str3;
+			str5 = time2 + time3 + str3;
+			document.write(str4); // time1이 문자라 1과 문자가 먼저 더해져서 12로 나온다.
+			document.write('<br>');
+			document.write(str5); // time1이 없이 숫자로 시작해서 더해지기 때문에 3으로 나온다.
+	</script>
+</body>
+</html>
