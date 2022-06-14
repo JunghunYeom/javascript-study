@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>배열</h2>
+	<script>
+		/*
+			배열 만들기
+			let arr = [];
+			let arr = new Array();
+		*/
+		/*
+		let fruits = [];
+		fruits[0] = '사과';
+		fruits[1] = '배';
+		fruits[2] = '바나나';
+		*/
+
+		let fruits = ['사과', '배', '바나나', '딸기'];
+		let animals = ['사자', '호랑이', '곰'];
+
+
+		let amount = fruits.length;
+		let newStr = fruits.join('/');
+		let newArr = fruits.reverse();
+		let newArr2 = fruits.reverse();
+		let newArr3 = fruits.concat(animals);
+		let newArr4 = fruits.slice(1,3); // 원본유지, 1번 부터 3번 이전
+		let newArr5 = fruits.splice(1,3); // 원본 손상, 1번 부터 3번까지
+
+		document.write(fruits + '<br>');
+		document.write(fruits[0] + '<br>');
+		document.write(amount + '<br>');
+		document.write(newStr + '<br>');
+		document.write(newArr + '<br>');
+		document.write(newArr2 + '<br>');
+		document.write(newArr3 + '<br>');
+		document.write(newArr4 + '<br>');
+		document.write(newArr5 + '<br>');
+	</script>
+
+	<h2>값 추가하기 - push</h2>
+	<p>기존의 값 뒤에 추가</p>
+	<script>
+		let beers = ['하이네켄', '코로나', '스텔라', '카스'];
+		beers.push('수제맥주', '제주비어');
+
+		document.write(beers);
+	</script>
+
+	<h2>값 추가하기 - unshift</h2>
+	<p>기존의 값 앞에 추가</p>
+	<script>
+		let beers02 = ['하이네켄', '코로나', '스텔라', '카스'];
+		beers02.unshift('수제맥주', '제주비어');
+
+		document.write(beers02);
+	</script>
+
+	<h2>값 삭제하기 - pop</h2>
+	<p>기존의 값 멘뒤에 값을 삭제한다.</p>
+	<script>
+		let beers03 = ['하이네켄', '코로나', '스텔라', '카스'];
+		beers03.pop();
+
+		document.write(beers03);
+	</script>
+
+	<h2>값 삭제하기 - shift</h2>
+	<p>기존의 값 맨앞에 값을 삭제한다.</p>
+	<script>
+		let beers04 = ['하이네켄', '코로나', '스텔라', '카스'];
+		beers04.shift();
+
+		document.write(beers04);
+	</script>
+</body>
+</html>
